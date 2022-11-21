@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;600;900&display=swap');
+
+:root {
+    --background-color: #ffffff;
+    --secondary-color: #39393A;
+    --secondary-hover-color: #58585a;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, a, p, span {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: 2fr 1fr; */
+}
+
+main > .main-section {
+    height: 100%;
+}
+
+main > .main-description-section,
+main > .main-nav-section {
+    border-left: 1px solid var(--secondary-color);
+}
+
+/* main > .main-title-section,
+main > .main-nav-section {
+    border-top: 1px solid var(--secondary-color);
+} */
+
+main > .main-headline-section > h1 {
+    font-weight: 600;
+    font-size: 6rem;
+    margin: 2rem;
+    text-align: right;
+}
+
+main > .main-headline-section > .experience-headline {
+    font-size: 4.75rem;
+    margin: 2rem;
+}
+
+main > .main-description-section > h2 {
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+main > .main-description-section > .about-description {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+main > .main-description-section > .experience-description {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color)
+}
+
+nav > .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+nav > #nav-link-section > .active {
+    font-weight: 600;
+}
+
+#nav-logo-section,
+#nav-link-section {
+    flex-basis: calc(100% / 3);
+}
+
+#nav-social-section,
+#nav-contact-section {
+    flex-grow: 1;
+}
+
+#nav-link-section {
+    gap: 6rem;
+}
+
+#nav-social-section {
+    gap: 3rem;
+}
+
+#nav-logo-section {
+    justify-content: flex-start;
+}
+
+#nav-logo-section > a > h3 {
+    font-weight: 800;
+}
+
+a:hover {
+    color: var(--secondary-hover-color);
+    transition: 0.2s;
+}
