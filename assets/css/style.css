@@ -27,7 +27,8 @@ h1, h2, h3, a, p, span {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
 main {
@@ -67,6 +68,20 @@ main > .main-headline-section > .experience-headline {
     margin: 2rem;
 }
 
+main > .main-headline-section > .contact-headline {
+    font-size: 5rem;
+}
+
+main > .main-description-section > .contact-form {
+    margin: 1rem;
+    width: 50%;
+}
+
+main > .main-description-section > .contact-form > form > .contact-button {
+    border: 1px solid var(--secondary-color);
+    border-radius: 0;
+}
+
 main > .main-description-section > h2 {
     font-size: 4rem;
     margin: 2rem;
@@ -80,6 +95,17 @@ main > .main-description-section > .about-description {
 main > .main-description-section > .experience-description {
     font-size: 3rem;
     margin: 2rem;
+}
+
+footer {
+    border-top: 1px solid var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer > p {
+    margin: 0;
+    text-transform: none;
 }
 
 nav {
@@ -98,6 +124,10 @@ nav > .nav-section {
 }
 
 nav > #nav-link-section > .active {
+    font-weight: 600;
+}
+
+nav > #nav-contact-section > .active {
     font-weight: 600;
 }
 
